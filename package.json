@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "npm run build && gh-pages -d dist -b main",
     "build": "webpack",
     "dev": "webpack serve"
   },
@@ -16,6 +17,7 @@
     "axios": "^0.27.2",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.1",
